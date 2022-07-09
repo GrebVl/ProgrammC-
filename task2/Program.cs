@@ -8,20 +8,22 @@ a = -9 b = -3 -> max = -3
 */
 
 Console.WriteLine("Введите число a:");
-int a = int.Parse(Console.ReadLine());
+int firstNum = int.Parse(Console.ReadLine());
+Console.WriteLine("a=" + firstNum);
 
 Console.WriteLine("Введите число b:");
-int b = int.Parse(Console.ReadLine());
+int secondNum = int.Parse(Console.ReadLine());
+Console.WriteLine("b=" + secondNum);
 
-if (a>b)
+if (firstNum > secondNum)
 {
-    Console.WriteLine("max="+a);
+    Console.WriteLine("max=" + firstNum);
 }
-else if (b>a)
+else if (secondNum > firstNum)
 {
-    Console.WriteLine("max="+b);
+    Console.WriteLine("max=" + secondNum);
 }
-else 
+else
 {
-    Console.WriteLine(a==b);
+    Console.WriteLine("max=a=b=" + firstNum);
 }
