@@ -13,7 +13,7 @@ int count = 1;
 
 while (count < N+1) {
     if (count%2 == 0)
-    Console.Write(count + " ");
+    Console.Write(count + ", ");
     count++;
 }
 Console.WriteLine(" ");
